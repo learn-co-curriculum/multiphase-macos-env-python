@@ -1,0 +1,18 @@
+---
+:lessons:
+- :id: 247166
+  :course_id: 6602
+  :canvas_url: https://learning.flatironschool.com/courses/6602/pages/installing-python-on-macos
+  :type: page
+- :id: 247167
+  :course_id: 6638
+  :canvas_url: https://learning.flatironschool.com/courses/6638/pages/installing-python-on-macos
+  :type: page
+- :id: 247168
+  :course_id: 6667
+  :canvas_url: https://learning.flatironschool.com/courses/6667/pages/installing-python-on-macos
+  :type: page
+- :id: 247169
+  :course_id: 4430
+  :canvas_url: https://learning.flatironschool.com/courses/4430/pages/installing-python-on-macos
+  :type: page
