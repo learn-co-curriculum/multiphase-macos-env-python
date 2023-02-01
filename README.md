@@ -1,5 +1,11 @@
 # Installing Python on MacOS
 
+**Note**: Depending on where you are in the curriculum and when you started the
+program, you may already have installed `pyenv`, Python, and `pipenv`. If so,
+you are free to skip this lesson. Before continuing, however, we recommend that
+you verify that everything is set up correctly by completing the steps in the
+next lesson.
+
 ## Install `pyenv`
 
 Before installing Python, we first need to install `pyenv`, a version manager
@@ -29,7 +35,7 @@ $ code ~/.bash_profile
 Add the following to the end of the file:
 
 ```text
-if which pyenv > /dev/null; then 
+if which pyenv > /dev/null; then
   eval "$(pyenv init -)";
 fi
 ```
@@ -47,7 +53,7 @@ or
 $ source ~/.bash_profile
 ```
 
-***
+---
 
 ## Install Python
 
@@ -81,7 +87,7 @@ $ python3 --version
 
 This command should show 3.8.13.
 
-***
+---
 
 ## Install Pipenv
 
@@ -93,15 +99,15 @@ $ pip install pipenv
 ```
 
 After you have installed pipenv, modify your shell startup file (either
-`~/.zshrc` or `~/.bash_profile`) to add an export line inside the `if`
-statement we added earlier, after the `eval` line:
+`~/.zshrc` or `~/.bash_profile`) to add an export line inside the `if` statement
+we added earlier, after the `eval` line:
 
 ```text
  if which pyenv > /dev/null; then
      eval "$(pyenv init - )";
      export PIPENV_VENV_IN_PROJECT=1
  fi
- ```
+```
 
 Save and close your shell startup file, then enter the following command once
 again to finish configuring your environment:
