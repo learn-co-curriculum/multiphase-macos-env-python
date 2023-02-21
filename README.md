@@ -19,8 +19,9 @@ Enter the following command in the Terminal:
 $ brew install pyenv
 ```
 
-Open your shell startup file (either `.zshrc` or `.bash_profile`) with the
-following command:
+From your home (`~`) directory, run `ls -a` and find your shell startup file,
+either `.zshrc` or `.bash_profile`. If you have both, just use `.zshrc`. Open it
+in VSCode with the following command:
 
 ```console
 $ code ~/.zshrc
