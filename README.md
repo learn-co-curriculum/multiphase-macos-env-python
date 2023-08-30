@@ -4,7 +4,7 @@
 program, you may already have installed `pyenv`, Python, and `pipenv`. If so,
 you are free to skip this lesson. Before continuing, however, we recommend that
 you verify that everything is set up correctly by completing the steps in the
-next lesson.
+"Verify and Troubleshoot your MacOS Environment Setup" lesson.
 
 ## Install `pyenv`
 
@@ -19,18 +19,10 @@ Enter the following command in the Terminal:
 $ brew install pyenv
 ```
 
-From your home (`~`) directory, run `ls -a` and find your shell startup file,
-either `.zshrc` or `.bash_profile`. If you have both, just use `.zshrc`. Open it
-in VSCode with the following command:
+Open your `.zshrc`file in VSCode:
 
 ```console
 $ code ~/.zshrc
-```
-
-or
-
-```console
-$ code ~/.bash_profile
 ```
 
 Add the following to the end of the file:
@@ -42,16 +34,12 @@ fi
 ```
 
 We want to load `pyenv` every time we open a new terminal window; this will make
-sure that it does! Enter the following command to load your new settings:
+sure that it does!
+
+Enter the following command to load your new settings:
 
 ```console
 $ source ~/.zshrc
-```
-
-or
-
-```console
-$ source ~/.bash_profile
 ```
 
 ---
@@ -99,9 +87,8 @@ about what Pipenv is later; for now, go ahead and install it:
 $ pip install pipenv
 ```
 
-After you have installed pipenv, modify your shell startup file (either
-`~/.zshrc` or `~/.bash_profile`) to add an export line inside the `if` statement
-we added earlier, after the `eval` line:
+After you have installed pipenv, modify your `.zshrc` file to add an export line
+inside the `if` statement we added earlier, after the `eval` line:
 
 ```text
  if which pyenv > /dev/null; then
@@ -115,12 +102,6 @@ again to finish configuring your environment:
 
 ```console
 $ source ~/.zshrc
-```
-
-or
-
-```console
-$ source ~/.bash_profile
 ```
 
 Congratulations! If you've completed all these steps you are ready to code in
